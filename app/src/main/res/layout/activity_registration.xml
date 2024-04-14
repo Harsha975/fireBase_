@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="55dp"
     tools:context=".Registration">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="FBLOG"
+        android:textSize="40sp"
+        android:textStyle="italic" />
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
@@ -24,6 +33,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/email"
         android:layout_width="match_parent"
+        android:layout_marginTop="250dp"
         android:layout_height="wrap_content"
         android:hint="@string/email"
         android:minHeight="48dp" />
@@ -35,6 +45,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/password"
         android:layout_width="match_parent"
+        android:layout_marginTop="320dp"
         android:layout_height="wrap_content"
         android:hint="@string/password"
         android:minHeight="48dp" />
@@ -48,6 +59,8 @@
     <Button
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:text="@string/register" />
 
@@ -55,9 +68,9 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="520dp"
         android:id="@+id/loginNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/click_to_login" />
-</LinearLayout>
+</RelativeLayout>
